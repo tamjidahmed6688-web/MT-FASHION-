@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MT FASHION | Online Dress Collection</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffaf7;
+      color: #252525;
+    }
+    header {
+      background: #171717;
+      color: white;
+      padding: 22px 16px;
+      text-align: center;
+    }
+    header h1 { margin: 0; letter-spacing: 3px; }
+    header p { color: #e4c49a; }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      padding: 15px;
+      background: #292929;
+      flex-wrap: wrap;
+    }
+    nav a { color: white; text-decoration: none; }
+    .hero {
+      text-align: center;
+      padding: 55px 18px;
+      background: #f1e4d7;
+    }
+    .hero h2 { font-size: 32px; }
+    .hero a, .product button {
+      display: inline-block;
+      background: #171717;
+      color: white;
+      padding: 12px 20px;
+      border: 0;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+      gap: 18px;
+      padding: 22px;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 12px #00000012;
+    }
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 7px;
+    }
+    .product p { color: #9a6337; font-weight: bold; }
+    footer {
+      background: #171717;
+      color: white;
+      text-align: center;
+      padding: 24px 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MT FASHION</h1>
+    <p>Your Style, Your Identity</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Discover Your Style</h2>
+    <p>Explore our latest fashion collection.</p>
+    <a href="#collection">Shop Now</a>
+  </section>
+
+  <h2 id="collection" style="text-align:center">
+    Our Collection
+  </h2>
+
+  <section class="products">
+    <article class="product">
+      <img src="https://placehold.co/400x500/f3e3d5/333?text=Kurti"
+           alt="Kurti collection">
+      <h3>Stylish Kurti</h3>
+      <p>Price: ৳850</p>
+      <button onclick="order('Stylish Kurti')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img src="https://placehold.co/400x500/e8dce9/333?text=Dress"
+           alt="Fashion dress">
+      <h3>Fashion Dress</h3>
+      <p>Price: ৳1200</p>
+      <button onclick="order('Fashion Dress')">Order Now</button>
+    </article>
+
+    <article class="product">
+      <img src="https://placehold.co/400x500/dce8e0/333?text=Shirt"
+           alt="Casual shirt">
+      <h3>Casual Shirt</h3>
+      <p>Price: ৳650</p>
+      <button onclick="order('Casual Shirt')">Order Now</button>
+    </article>
+  </section>
+
+  <footer id="contact">
+    <h3>MT FASHION</h3>
+    <p>Online Dress Collection</p>
+    <p>© 2026 MT FASHION</p>
+  </footer>
+
+  <script>
+    function order(product) {
+      alert("You selected " + product +
+        ". Please contact MT FASHION to complete your order.");
+    }
+  </script>
+</body>
+</html>
